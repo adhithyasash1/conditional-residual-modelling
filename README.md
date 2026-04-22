@@ -6,7 +6,7 @@ The repo asks one question:
 
 Can a conditional residual model put more uncertainty into stressed market states than a static empirical band, while still staying calibrated on the 5% lower tail?
 
-This is an uncertainty project, not an alpha system.
+This is an uncertainty modelling project, not an alpha system.
 
 ## What the Project Keeps
 
