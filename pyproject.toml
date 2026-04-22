@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cvae-spx"
+name = "conditional-residual-modelling"
 version = "0.1.0"
 description = "Conditional lower-tail uncertainty bands for next-day S&P 500 log returns"
 readme = "README.md"

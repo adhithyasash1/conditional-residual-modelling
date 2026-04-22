@@ -3,10 +3,21 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from cvae_spx.config import BaselineConfig, EvaluationConfig, QuantileConfig, SplitConfig, TrainingConfig
-from cvae_spx.features import apply_train_only_regimes, build_feature_frame, time_split, walk_forward_splits
-from cvae_spx.models.quantile_regressor import ConditionalQuantileRegressor
-from cvae_spx.pipeline import run_training_from_features
+from conditional_residual_modelling.config import (
+    BaselineConfig,
+    EvaluationConfig,
+    QuantileConfig,
+    SplitConfig,
+    TrainingConfig,
+)
+from conditional_residual_modelling.features import (
+    apply_train_only_regimes,
+    build_feature_frame,
+    time_split,
+    walk_forward_splits,
+)
+from conditional_residual_modelling.models.quantile_regressor import ConditionalQuantileRegressor
+from conditional_residual_modelling.pipeline import run_training_from_features
 
 
 def _synthetic_master_panel(n: int = 520, seed: int = 7) -> pd.DataFrame:

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from cvae_spx.data import align_to_spx_trading_dates
+from conditional_residual_modelling.data import align_to_spx_trading_dates
 
 
 def test_align_to_spx_trading_dates_anchors_on_observed_spx_rows() -> None:

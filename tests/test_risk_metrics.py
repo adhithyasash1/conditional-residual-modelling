@@ -3,7 +3,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from cvae_spx.evaluation.evaluate import (
+from conditional_residual_modelling.evaluation.evaluate import (
     fit_regime_conditional_empirical_quantiles,
     kupiec_pof_test,
     predict_regime_conditional_empirical_quantiles,

@@ -1,6 +1,6 @@
-# cvae-spx
+# Conditional Residual Modelling
 
-`cvae-spx` is a focused research repo for lower-tail uncertainty modeling on next-day S&P 500 log returns.
+Conditional residual modelling for calibrated lower-tail uncertainty on next-day S&P 500 log returns.
 
 The repo asks one question:
 
@@ -175,7 +175,7 @@ conditional-residuals-modelling/
 │   ├── download_data.py
 │   ├── train.py
 │   └── validate_run.py
-├── src/cvae_spx/
+├── src/conditional_residual_modelling/
 │   ├── __init__.py
 │   ├── config.py
 │   ├── data.py
@@ -285,7 +285,7 @@ This is the shortest summary of whether the run passed the lower-tail bar.
 ## Reproducibility and Stability
 
 - All randomness is seeded from `RANDOM_SEED`
-- BLAS / OpenMP / Torch threads are capped to `1` in `src/cvae_spx/__init__.py`
+- BLAS / OpenMP / Torch threads are capped to `1` in `src/conditional_residual_modelling/__init__.py`
 - The package sets writable temp cache locations for matplotlib on locked-down macOS environments
 - Tests cover alignment, risk metrics, and a synthetic end-to-end smoke run
 

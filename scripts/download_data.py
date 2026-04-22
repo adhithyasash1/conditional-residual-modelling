@@ -7,7 +7,7 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from cvae_spx.pipeline import rebuild_processed_inputs, run_data_download
+from conditional_residual_modelling.pipeline import rebuild_processed_inputs, run_data_download
 
 
 if __name__ == "__main__":

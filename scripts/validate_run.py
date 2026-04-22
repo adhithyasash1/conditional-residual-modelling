@@ -14,10 +14,10 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from cvae_spx.config import PROCESSED_DIR, RANDOM_SEED, SplitConfig
-from cvae_spx.evaluation.evaluate import band_width_diagnostics, maybe_kupiec
-from cvae_spx.features import apply_train_only_regimes, time_split
-from cvae_spx.pipeline import rebuild_processed_inputs, run_training
+from conditional_residual_modelling.config import PROCESSED_DIR, RANDOM_SEED, SplitConfig
+from conditional_residual_modelling.evaluation.evaluate import band_width_diagnostics, maybe_kupiec
+from conditional_residual_modelling.features import apply_train_only_regimes, time_split
+from conditional_residual_modelling.pipeline import rebuild_processed_inputs, run_training
 
 
 def parse_args() -> argparse.Namespace:

@@ -15,7 +15,7 @@ for _var in (
 ):
     os.environ.setdefault(_var, "1")
 
-_cache_root = Path(tempfile.gettempdir()) / "cvae_spx_cache"
+_cache_root = Path(tempfile.gettempdir()) / "conditional_residual_modelling_cache"
 _mpl_root = _cache_root / "matplotlib"
 _cache_root.mkdir(parents=True, exist_ok=True)
 _mpl_root.mkdir(parents=True, exist_ok=True)
