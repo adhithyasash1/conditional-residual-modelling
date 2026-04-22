@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cvae-spx"
+version = "0.1.0"
+description = "Conditional lower-tail uncertainty bands for next-day S&P 500 log returns"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "joblib",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "python-dotenv",
+    "pytest",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "torch",
+    "xgboost",
+    "yfinance",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
